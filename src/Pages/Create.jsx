@@ -50,21 +50,21 @@ const Create = () => {
         />
 
         <textarea
-          {...register("discription")}
+          {...register("desc")}
           placeholder="Enter Description"
           className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
           rows={3}
         ></textarea>
 
         <textarea
-          {...register("ingredients")}
+          {...register("ingr")}
           placeholder="Enter Ingredients"
           className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
           rows={3}
         ></textarea>
 
         <textarea
-          {...register("instructions")}
+          {...register("inst")}
           placeholder="Enter Instructions"
           className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
           rows={3}
@@ -75,9 +75,10 @@ const Create = () => {
           className="w-full p-3 border border-gray-300 rounded-lg bg-black focus:outline-none focus:ring-2 focus:ring-green-500"
         >
           <option value="">Select Category</option>
-          <option value="cat-1">Category 1</option>
-          <option value="cat-2">Category 2</option>
-          <option value="cat-3">Category 3</option>
+          <option value="breakfast">Breakfast</option>
+          <option value="lunch">Lunch</option>
+          <option value="supper">Supper</option>
+          <option value="dinner">Dinner</option>
         </select>
 
         <button
