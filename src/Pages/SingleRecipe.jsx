@@ -8,8 +8,16 @@ const SingleRecipe = () => {
   const { data, setdata } = useContext(recipecontext);
   const { register, handleSubmit, reset } = useForm();
 
-  const SubmitHandler = (recipe) => {};
-  const { dat } = useContext(recipecontext);
+  const SubmitHandler = (recipe) => {
+    const index = data.find((recipe) => params.id == recipe.id);
+    const copydata = [...data]
+    copydata[index] = {...copydata[index], ...recipe}
+    console.log(index);
+
+    
+
+  };
+  // const { dat } = useContext(recipecontext);
   const params = useParams();
   const recipe = data.find((recipe) => params.id == recipe.id);
   console.log(recipe);
@@ -101,7 +109,13 @@ const SingleRecipe = () => {
           type="submit"
           className="w-full mt-4 bg-green-600 hover:bg-green-700 transition-all duration-300 text-white py-3 px-6 rounded-lg text-lg font-semibold"
         >
-          Save Recipe
+          Update
+        </button>
+        <button
+          type="submit"
+          className="w-full mt-4 bg-red-600 hover:bg-red-700 transition-all duration-300 text-white py-3 px-6 rounded-lg text-lg font-semibold"
+        >
+          Delte
         </button>
       </form>
     </div>
