@@ -34,7 +34,7 @@ const RecipeContext = (props) => {
       image: "https://cdn.dummyjson.com/recipe-images/1.webp",
       chef:"Pankaj Chamoli",
       category: "Dinner",
-      desc:"Top with slices of fresh mozzarella and fresh basil leaves"
+      desc:"Top with slices of fresh mozzarella and fresh basil leaves,Drizzle with olive oil and season with salt and pepper"
     },
   ]);
   console.log(data);

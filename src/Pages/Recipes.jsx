@@ -8,7 +8,7 @@ const Recipes = () => {
   const renderrecipes = data.map((recipe) => (
     <Recipecard recipe={recipe} key={recipe.id} />
   ));
-  return <div>{renderrecipes}</div>;
+  return <div className="flex flex-wrap">{renderrecipes}</div>;
 };
 
 export default Recipes;
